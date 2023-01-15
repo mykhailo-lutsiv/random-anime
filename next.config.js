@@ -1,20 +1,20 @@
-// const isGithubActions = process.env.GITHUB_ACTIONS || false
+const isGithubActions = process.env.GITHUB_ACTIONS || false
 
-// let assetPrefix = ''
-// let basePath = '/'
+let assetPrefix = ''
+let basePath = '/'
 
-// if (isGithubActions) {
-//   const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, '')
+if (isGithubActions) {
+  const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, '')
 
-//   assetPrefix = `/${repo}/`
-//   basePath = `/${repo}`
-// }
+  assetPrefix = `/${repo}/`
+  basePath = `/${repo}`
+}
 
-// module.exports = {
-//   assetPrefix: assetPrefix,
-//   basePath: basePath,
-//   images: {
-//     loader: 'imgix',
-//     path: 'random-anime.imgix.net',
-//   },
-// }
+module.exports = {
+  assetPrefix: assetPrefix,
+  basePath: basePath,
+  images: {
+    loader: 'imgix',
+    path: 'random-anime.imgix.net',
+  },
+}
