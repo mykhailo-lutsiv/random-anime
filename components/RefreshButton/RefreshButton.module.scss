@@ -16,3 +16,14 @@
     background:#d77bd4 ;
   }
 }
+
+@media (max-width: 900px) {
+  .button {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 20px;
+    font-weight:700;
+    margin-left: 700;
+  }
+}
